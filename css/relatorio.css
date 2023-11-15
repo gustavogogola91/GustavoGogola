@@ -1,0 +1,238 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    color: #fff;
+    background-color: #4d4d4d;
+    width: 100vw;
+}
+
+header {
+    color: #005c4b;
+    background-color: #e3fed3;
+    width: 100%;
+}
+
+.logo-header,
+.menu {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo-header {
+    padding: 15px;
+    margin-left: 100px;
+    width: calc(50% - 115px);
+}
+
+.menu {
+    padding: 15px;
+    text-align: end;
+    margin-right: 100px;
+    width: calc(50% - 115px);
+}
+
+.header-btn {
+    display: inline-block;
+    list-style-type: none;
+    padding: 15px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5ms;
+}
+
+.header-btn a {
+    text-decoration: none;
+    color: #005c4b;
+}
+
+.header-btn:hover {
+    border: 1px solid #005c4b;
+    border-radius: 5px;
+}
+
+main {
+    padding: 50px;
+
+}
+footer {
+    color: #005c4b;
+    background-color: #e3fed3;
+    width: 100%;
+}
+
+.logo-footer,
+.menu-footer,
+.credit-footer {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo-footer {
+    padding: 15px;
+    margin-left: 100px;
+    width: calc(25% - 115px);
+}
+.menu-footer {
+    padding: 15px;
+    text-align: center;
+    margin-right: 100px;
+    width: calc(50% - 115px);
+}
+.credit-footer {
+    padding: 15px;
+    text-align: end;
+    margin-right: 100px;
+    width: calc(25% - 115px);
+    font-weight: bold;
+}
+
+.credit-footer ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.credit-footer a {
+    text-decoration: none;
+    color: #005c4b;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.credit-footer a:hover {
+    border-bottom: 1px solid #005c4b;
+    border-radius: 5px;
+}
+
+.footer-btn {
+    list-style-type: none;
+    padding: 15px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5ms;
+}
+
+.footer-btn a {
+    text-decoration: none;
+    color: #005c4b;
+}
+
+.footer-btn:hover {
+    border: 1px solid #005c4b;
+    border-radius: 5px;
+}
+
+.copy {
+    padding: 15px;
+    background-color: #4d4d4d;
+    text-align: center;
+}
+
+@media (max-width: 1017px) {
+ul, .credit-footer, footer {
+    display: flex;
+}
+
+footer {
+    flex-direction: row;
+    justify-content: space-between;
+}
+.credit-footer ul, .credit-footer {
+    flex-direction: column;
+    padding-right: 0;
+}
+
+
+}
+
+@media (max-width: 767px) {
+    .logo-header, .logo-footer
+    ,.menu, .menu-footer  {
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 711px)  {
+    footer, header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .logo-header, .logo-footer {
+        margin-left: calc(50vw - 90px);
+    }
+
+    .menu, .menu-footer {
+        width: 90vw;
+        padding: 0;
+        margin: auto;
+    }
+
+    .credit-footer {
+        width: 80vw;
+        margin: 0;
+        padding: 0;
+    }
+    .credit-footer p {
+        width: 80%;
+        margin-left: calc(50% - 90px);
+    }
+
+    .credit-footer li, .credit-footer p {
+        text-align: center;
+    }
+
+    .credit-footer ul {
+        padding: 0;
+        margin: auto;
+    }
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+td{
+    background-color: rgb(43, 43, 43);
+    color: #9e9e9e;
+    border:1px solid rgb(43, 43, 43);
+    padding: 10px;
+    text-align: center;
+}
+th{ 
+    background-color: rgb(83, 135, 194);
+    border:1px solid rgb(83, 135, 194);
+    padding: 10px;
+    text-align: center;
+}
+.codigo{
+    color: #005c4b;
+}
+.botao{
+    width: auto;
+    margin: auto;
+    padding-left: calc(50% - 60px);
+}
+select{
+    color: #fff;
+    padding: 5px;
+    background-color: rgb(43, 43, 43);
+}
+.botao input{
+    color: #fff;
+    padding: 5px;
+    background-color: rgb(43, 43, 43);
+}

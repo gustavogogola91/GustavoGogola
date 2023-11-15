@@ -1,0 +1,15 @@
+#info {
+    background-color: lightgray;
+    width: 50%;
+    margin: 50px auto;
+    border-radius: 10px;
+    padding: 30px;
+    color: black;
+}
+
+p {
+    margin: 5px;
+}
+a {
+    color: #005c4b;
+}
