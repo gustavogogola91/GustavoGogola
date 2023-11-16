@@ -1,6 +1,6 @@
 const dados = JSON.parse(localStorage.getItem("dados")) || [];
 const table = document.getElementById("conteudo");
-const modal = document.querySelector("modal");
+const modal = document.getElementById("dialog");
 
 function exibir() {
   dados.forEach((i, k) => {
@@ -9,16 +9,12 @@ function exibir() {
 		<td>${k}</td>
 		<td>${i.nome}</td>
 		<td>${i.email}</td>
-		<td>${i.tipoSolicitado}</td>
+		<td>${i.tipoSolicitacao}</td>
 		<td>${i.situacao}</td>
-		<td><a href="./maisInfo.html?key=${k}">Mais informações</a> || <a href="#" onclick="alterarSituacao(${k})"> Mudar situação </a> </td>
+		<td><a href="./maisInfo.html?key=${k}">Mais informações</a></td>
 	</tr>
         `;
   });
 }
 
 exibir();
-
-function alterarSituacao(key) {
-	modal.showModal();
-}
